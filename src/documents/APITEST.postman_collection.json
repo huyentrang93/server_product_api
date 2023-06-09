@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "7577ac54-523d-4597-9a0f-dcf203579dc8",
+		"name": "APITEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11128388"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mp_id\": \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\",\"mp_name\": \"Tb001\",\"user_id\": \"Trang\", \"mp_imei\":\"1121\", \"mp_date\":\"2023-06-09\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productdelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mp_id\": \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productput",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\",\"name\": \"Tb002\", \"imei\":\"1121\", \"date\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"8F5E0530-30DB-4505-8835-052C2E6AC3FE\", \"dv_name\":\"DieuHoa\", \"note\":\"\", \"dv_origin\":\"\" ,\"id_product\": \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\" , \"id_type\":\"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/device",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deviceput",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dv_id\":\"8F5E0530-30DB-4505-8835-052C2E6AC3FE\", \"dv_name\":\"DieuHoa01\", \"note\":\"\", \"dv_origin\":\"\" , \"id_type\":\"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/device",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/remote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"rm_id\":\"B3E7435D-3976-4AB6-BE38-951C5AD2C872\", \"rm_name\":\"bật điều hòa\", \"rm_code\":\"01\", \"id_Device\":\"8F5E0530-30DB-4505-8835-052C2E6AC3FE\" , \"date\":\"2023-06-09\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/remote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/remoteput",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"rm_id\":\"B3E7435D-3976-4AB6-BE38-951C5AD2C872\", \"rm_name\":\"bật điều hòa\", \"rm_code\":\"02\" , \"date\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/remote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getdevice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dv_id\" : \"73A88BE9-33BA-4A09-BCCB-D185ED332AA7\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/device",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getdevices",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dv_id\" : \"73A88BE9-33BA-4A09-BCCB-D185ED332AA7\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/device",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getremote",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rm_id\" : \"B3E7435D-3976-4AB6-BE38-951C5AD2C872\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/remote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getremotes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rm_id\" : \"B3E7435D-3976-4AB6-BE38-951C5AD2C872\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/remotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mp_id\" : \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token_id",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mp_id\" : \"B7B16BF9-65D1-4122-8C01-881AA49E58FA\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
